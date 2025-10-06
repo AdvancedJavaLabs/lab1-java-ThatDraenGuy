@@ -1,16 +1,12 @@
 package org.itmo;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.Buffer;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Random;
-import java.util.function.BiFunction;
-import java.util.stream.IntStream;
 
 public class BFSTest {
 
@@ -18,16 +14,18 @@ public class BFSTest {
     public void singularTest() throws IOException {
         int size = 2_000_000;
         int connections = 10_000_000;
-        int threadNum = 24;
+        int threadNum = 1;
         Random r = new Random(43);
         System.out.println("--------------------------");
         System.out.println("Generating graph ...wait");
         Graph g = new RandomGraphGenerator().generateGraph(r, size, connections);
         System.out.println("Generation completed!");
         System.out.println("Starting serial bfs");
+        executeSerialBfsAndGetTime(g);
         long linearTime = executeSerialBfsAndGetTime(g);
         System.out.println("Finished in " + linearTime);
         System.out.println("Starting parallel bfs with " + threadNum + " threads");
+        executeParallelBfsAndGetTime(g, threadNum);
         long time = executeParallelBfsAndGetTime(g, threadNum);
         System.out.println("Finished in " + time);
     }
@@ -35,7 +33,7 @@ public class BFSTest {
     public void threadNumTest() throws IOException {
         int size = 2_000_000;
         int connections = 10_000_000;
-        int[] threads = new int[]{1, 2, 4, 8, 16, 32, 64};
+        int[] threads = new int[]{1, 2, 4, 6, 8, 16, 32};
         int repeats = 8;
         Random r = new Random(43);
         try (FileWriter fw = new FileWriter("tmp/threads.txt")) {
@@ -56,6 +54,20 @@ public class BFSTest {
                 fw.append("\n--------\n");
             }
             fw.flush();
+        }
+    }
+
+    @Test
+    public void resultTest() {
+        long[] seeds = new long[]{42, 67, 143, 420};
+        for (long seed : seeds) {
+            Random r = new Random(42);
+            Graph g = new RandomGraphGenerator().generateGraph(r, 100_000, 1_000_000);
+            int[] expected = g.countingBFS(0);
+            int[] result = g.countingParallelBFS(0, 8);
+            for (int i = 0; i < expected.length; i++) {
+                Assertions.assertEquals(expected[i], result[i]);
+            }
         }
     }
 

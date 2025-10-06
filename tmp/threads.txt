@@ -1,0 +1,77 @@
+Times for 1 threads
+Parallel: 4542
+Parallel: 5307
+Parallel: 4918
+Parallel: 4876
+Parallel: 4754
+Parallel: 4845
+Parallel: 4813
+Parallel: 4769
+Average parallel: 4853
+--------
+Times for 2 threads
+Parallel: 1668
+Parallel: 2629
+Parallel: 2538
+Parallel: 2585
+Parallel: 2696
+Parallel: 2551
+Parallel: 2602
+Parallel: 2570
+Average parallel: 2479
+--------
+Times for 4 threads
+Parallel: 1322
+Parallel: 1216
+Parallel: 1282
+Parallel: 1451
+Parallel: 1694
+Parallel: 1676
+Parallel: 1484
+Parallel: 1619
+Average parallel: 1468
+--------
+Times for 6 threads
+Parallel: 1113
+Parallel: 1197
+Parallel: 1111
+Parallel: 1178
+Parallel: 1097
+Parallel: 1182
+Parallel: 1111
+Parallel: 1191
+Average parallel: 1147
+--------
+Times for 8 threads
+Parallel: 946
+Parallel: 1008
+Parallel: 952
+Parallel: 958
+Parallel: 973
+Parallel: 957
+Parallel: 999
+Parallel: 946
+Average parallel: 967
+--------
+Times for 16 threads
+Parallel: 1020
+Parallel: 948
+Parallel: 1035
+Parallel: 953
+Parallel: 1023
+Parallel: 955
+Parallel: 1040
+Parallel: 949
+Average parallel: 990
+--------
+Times for 32 threads
+Parallel: 961
+Parallel: 987
+Parallel: 959
+Parallel: 997
+Parallel: 968
+Parallel: 1052
+Parallel: 960
+Parallel: 1012
+Average parallel: 987
+--------

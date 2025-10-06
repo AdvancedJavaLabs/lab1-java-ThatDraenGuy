@@ -1,32 +1,180 @@
 Times for 10 vertices and 50 connections: 
 Serial: 0
-Parallel: 0
+Parallel: 6
+Serial: 0
+Parallel: 1
+Serial: 0
+Parallel: 5
+Serial: 0
+Parallel: 2
+Serial: 0
+Parallel: 1
+Serial: 0
+Parallel: 2
+Serial: 0
+Parallel: 1
+Serial: 0
+Parallel: 1
+Average serial: 0
+Average parallel: 2
 --------
 Times for 100 vertices and 500 connections: 
 Serial: 0
-Parallel: 0
+Parallel: 2
+Serial: 0
+Parallel: 2
+Serial: 0
+Parallel: 2
+Serial: 0
+Parallel: 1
+Serial: 0
+Parallel: 1
+Serial: 0
+Parallel: 2
+Serial: 0
+Parallel: 1
+Serial: 0
+Parallel: 2
+Average serial: 0
+Average parallel: 1
 --------
 Times for 1000 vertices and 5000 connections: 
 Serial: 1
-Parallel: 0
+Parallel: 4
+Serial: 1
+Parallel: 3
+Serial: 1
+Parallel: 3
+Serial: 1
+Parallel: 2
+Serial: 1
+Parallel: 3
+Serial: 1
+Parallel: 3
+Serial: 1
+Parallel: 4
+Serial: 1
+Parallel: 4
+Average serial: 1
+Average parallel: 3
 --------
 Times for 10000 vertices and 50000 connections: 
-Serial: 3
-Parallel: 0
+Serial: 8
+Parallel: 13
+Serial: 5
+Parallel: 12
+Serial: 5
+Parallel: 4
+Serial: 2
+Parallel: 6
+Serial: 2
+Parallel: 5
+Serial: 2
+Parallel: 7
+Serial: 2
+Parallel: 6
+Serial: 2
+Parallel: 4
+Average serial: 3
+Average parallel: 7
 --------
 Times for 10000 vertices and 100000 connections: 
+Serial: 3
+Parallel: 6
+Serial: 3
+Parallel: 5
 Serial: 2
-Parallel: 0
+Parallel: 7
+Serial: 3
+Parallel: 4
+Serial: 3
+Parallel: 6
+Serial: 4
+Parallel: 4
+Serial: 3
+Parallel: 5
+Serial: 4
+Parallel: 5
+Average serial: 3
+Average parallel: 5
 --------
 Times for 50000 vertices and 1000000 connections: 
-Serial: 30
-Parallel: 0
+Serial: 45
+Parallel: 32
+Serial: 47
+Parallel: 31
+Serial: 45
+Parallel: 37
+Serial: 50
+Parallel: 30
+Serial: 47
+Parallel: 30
+Serial: 46
+Parallel: 43
+Serial: 28
+Parallel: 40
+Serial: 28
+Parallel: 30
+Average serial: 42
+Average parallel: 34
 --------
 Times for 100000 vertices and 1000000 connections: 
-Serial: 18
-Parallel: 0
+Serial: 36
+Parallel: 36
+Serial: 36
+Parallel: 35
+Serial: 37
+Parallel: 41
+Serial: 45
+Parallel: 37
+Serial: 41
+Parallel: 35
+Serial: 44
+Parallel: 43
+Serial: 46
+Parallel: 35
+Serial: 38
+Parallel: 35
+Average serial: 40
+Average parallel: 37
 --------
 Times for 1000000 vertices and 10000000 connections: 
-Serial: 307
-Parallel: 0
+Serial: 1936
+Parallel: 524
+Serial: 526
+Parallel: 524
+Serial: 536
+Parallel: 522
+Serial: 585
+Parallel: 526
+Serial: 544
+Parallel: 529
+Serial: 537
+Parallel: 550
+Serial: 541
+Parallel: 526
+Serial: 534
+Parallel: 522
+Average serial: 717
+Average parallel: 527
+--------
+Times for 2000000 vertices and 10000000 connections: 
+Serial: 1104
+Parallel: 771
+Serial: 887
+Parallel: 764
+Serial: 992
+Parallel: 763
+Serial: 862
+Parallel: 764
+Serial: 995
+Parallel: 763
+Serial: 870
+Parallel: 766
+Serial: 999
+Parallel: 762
+Serial: 871
+Parallel: 762
+Average serial: 947
+Average parallel: 764
 --------
